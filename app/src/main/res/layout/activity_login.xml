@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/username"
+        style="@style/style"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="481dp"
+        android:backgroundTint="#FF5722"
+        android:ems="10"
+        android:hint="UserName"
+        android:text=""
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <EditText
+        android:id="@+id/pass"
+        style="@style/style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="283dp"
+        android:layout_marginEnd="98dp"
+        android:layout_marginBottom="373dp"
+        android:backgroundTint="#FF5722"
+        android:ems="10"
+        android:hint="PassWord"
+        android:text=""
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="590dp"
+        android:backgroundTint="#FF5722"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:text="Login"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="7dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="458dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="266dp"
+        android:backgroundTint="#FF5722"
+        android:ems="10"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="549dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="169dp"
+        android:backgroundTint="#FF5722"
+        android:ems="10"
+        android:text="Registr" />
+
+
+</RelativeLayout>
