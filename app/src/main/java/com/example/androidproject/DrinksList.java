@@ -34,6 +34,6 @@ public class DrinksList {
 
     @Override
     public String toString() {
-        return "drinkName='" + drinkName;
+        return drinkName;
     }
 }

@@ -1,27 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="279dp"
+        android:layout_height="226dp"
+        android:layout_gravity="center"
+        android:padding="30dp"
+        android:src="@drawable/logoapp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#FF5722"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:text="Login"
+        android:textSize="34sp" />
     <EditText
         android:id="@+id/username"
         style="@style/style"
         android:layout_width="wrap_content"
         android:layout_height="72dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="178dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginBottom="481dp"
+       android:layout_gravity="center"
         android:backgroundTint="#FF5722"
         android:ems="10"
-        android:hint="UserName"
+        android:hint="Username"
         android:text=""
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="253dp" />
@@ -30,71 +46,40 @@
         android:id="@+id/pass"
         style="@style/style"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="118dp"
-        android:layout_marginTop="283dp"
-        android:layout_marginEnd="98dp"
-        android:layout_marginBottom="373dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
         android:backgroundTint="#FF5722"
         android:ems="10"
-        android:hint="PassWord"
+        android:hint="Password"
         android:text=""
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="253dp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="143dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginEnd="141dp"
-        android:layout_marginBottom="590dp"
-        android:backgroundTint="#FF5722"
-        android:ems="10"
-        android:fontFamily="casual"
-        android:text="Login"
-        android:textSize="34sp" />
+
 
     <Button
         android:id="@+id/login"
         android:layout_width="wrap_content"
-        android:layout_height="7dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="458dp"
-        android:layout_marginEnd="138dp"
-        android:layout_marginBottom="266dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-1dp"
         android:backgroundTint="#FF5722"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
         android:ems="10"
-        android:text="Login" />
+        android:text="Login"
+        android:textSize="15dp"/>
+
 
     <Button
         android:id="@+id/registration"
-        android:layout_width="wrap_content"
+        android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="549dp"
-        android:layout_marginEnd="143dp"
-        android:layout_marginBottom="169dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="90dp"
         android:backgroundTint="#FF5722"
         android:ems="10"
-        android:text="Registr" />
+        android:text="Register" />
 
 
-</RelativeLayout>
+</LinearLayout>
