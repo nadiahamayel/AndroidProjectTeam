@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AndroidProject</string>
+    <string name="app_name">Recipes App</string>
+    <string-array name="options">
+        <item>Drinks</item>
+        <item>Sweets</item>
+        <item>Main dishes</item>
+        <item>Side dishes</item>
+    </string-array>
 </resources>

@@ -10,4 +10,11 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+<!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@colors/color</item>-->
+<!--        <item name="colorPrimaryDark">@colors/colorPrimaryDark</item>-->
+<!--        <item name="colorAccent">@colors/colorAccent</item>-->
+<!--    </style>-->
 </resources>
