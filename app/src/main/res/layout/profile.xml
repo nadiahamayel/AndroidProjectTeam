@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <ImageView
+        android:id="@+id/userImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_below="@id/userImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Info"
+        android:textColor="#912121"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:translationX="-30pt"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    <ListView-->
+<!--        android:id="@+id/lstUserInfo"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="300dp"-->
+
+<!--        />-->
+    <ImageView
+        android:id="@+id/imgUsername"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/username"
+        android:layout_below="@+id/txtInfo"/>
+
+    <TextView
+        android:layout_below="@+id/txtInfo"
+        android:id="@+id/txtuser"
+        android:layout_toRightOf="@id/imgUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text="Username"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_below="@id/txtuser"
+        android:layout_toRightOf="@id/imgUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="9pt"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+
+        />
+
+    <ImageView
+        android:id="@+id/iconemail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/email"
+        android:layout_below="@+id/imgUsername"/>
+
+    <TextView
+        android:layout_below="@+id/username"
+        android:id="@+id/txtemail"
+        android:layout_toRightOf="@id/iconemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text="Email"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_below="@id/txtemail"
+        android:layout_toRightOf="@id/iconemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test@email.com"
+        android:textSize="9pt"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+    <ImageView
+        android:id="@+id/icondate"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/date"
+        android:layout_below="@+id/iconemail"/>
+
+    <TextView
+        android:layout_below="@+id/email"
+        android:id="@+id/txtdate"
+        android:layout_toRightOf="@id/icondate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text="Date of Birth"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@id/txtdate"
+        android:layout_toRightOf="@id/icondate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 / 12 / 2022"
+        android:textSize="9pt"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+    <ImageView
+        android:id="@+id/icongender"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/gender"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/icondate"/>
+
+    <TextView
+        android:layout_below="@+id/date"
+        android:id="@+id/txtgender"
+        android:layout_toRightOf="@id/icongender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text="Gender"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_below="@id/txtgender"
+        android:layout_toRightOf="@id/icongender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Female"
+        android:textSize="9pt"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+    <ImageView
+        android:id="@+id/iconpassword"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/password"
+        android:layout_below="@+id/icongender"/>
+
+    <TextView
+        android:layout_below="@+id/gender"
+        android:id="@+id/txtpassword"
+        android:layout_toRightOf="@id/iconpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12pt"
+        android:text="Password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_below="@id/txtpassword"
+        android:layout_toRightOf="@id/iconpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="123@pass1"
+        android:textSize="9pt"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+        />
+
+    <Button
+        android:id="@+id/btnChangePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_marginLeft="100dp"
+        android:backgroundTint="#902121"
+        android:text="Change Password"
+        android:textSize="10dp" />
+
+
+
+
+
+
+
+
+    <!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Username:"-->
+<!--        android:textColor="#18588A"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:translationX="-20pt" />-->
+
+</RelativeLayout>
