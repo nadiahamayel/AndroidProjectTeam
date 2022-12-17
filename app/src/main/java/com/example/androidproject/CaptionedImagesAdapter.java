@@ -42,6 +42,9 @@ public class CaptionedImagesAdapter
         TextView txt = cardView.findViewById(R.id.dish_name);
         txt.setText(captions[position]);
 
+
+
+
         cardView.setOnClickListener( new View.OnClickListener(){
             @Override
             public void onClick(View v){

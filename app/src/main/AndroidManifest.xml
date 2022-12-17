@@ -16,6 +16,9 @@
             android:name=".MainDishesActivity"
             android:exported="false" />
         <activity
+            android:name=".SideDishesActivity"
+            android:exported="false" />
+        <activity
             android:name=".SweetsDetailActivity"
             android:exported="false" />
         <activity
