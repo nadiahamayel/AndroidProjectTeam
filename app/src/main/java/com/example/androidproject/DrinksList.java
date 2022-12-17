@@ -8,7 +8,13 @@ public class DrinksList {
     public static final DrinksList[] drinksList = {
             new DrinksList(  "Coffee" , R.drawable.coffee ),
             new DrinksList("Cappuccino",  R.drawable.coffee),
-            new DrinksList("Filter", R.drawable.coffee)
+            new DrinksList("Filter", R.drawable.coffee),
+            new DrinksList("Tea", R.drawable.coffee),
+            new DrinksList("Mocha", R.drawable.coffee),
+            new DrinksList("Ice Coffee", R.drawable.coffee),
+            new DrinksList("Ice Tea", R.drawable.coffee),
+            new DrinksList("Vanilla", R.drawable.coffee),
+            new DrinksList("Americano", R.drawable.coffee)
     };
 
     public DrinksList(String drinkName, int drinkImg) {

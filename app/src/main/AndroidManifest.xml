@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProject">
         <activity
+            android:name=".Home_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainDishesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SweetsDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".SweetsActivity"
             android:exported="false" />
         <activity

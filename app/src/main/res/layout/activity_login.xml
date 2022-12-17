@@ -51,9 +51,11 @@
         android:backgroundTint="#FF5722"
         android:ems="10"
         android:hint="Password"
+        android:password="true"
         android:text=""
         tools:layout_editor_absoluteX="84dp"
-        tools:layout_editor_absoluteY="253dp" />
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="Deprecated" />
 
 
 

@@ -6,13 +6,20 @@
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1395" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/drawable/customer.xml" value="0.1" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_drink_detail.xml" value="0.25905797101449274" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_drink_detail.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_drinks.xml" value="0.25905797101449274" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_home.xml" value="0.16145833333333334" />
-        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_home_admin.xml" value="0.1" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_main_dishes.xml" value="0.25" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_registeration.xml" value="0.1" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_sweet_detail.xml" value="0.10190217391304347" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_sweets.xml" value="0.25" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/activity_sweets_detail.xml" value="0.1" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/layout/card_captioned_image.xml" value="0.1" />
         <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/Oraib/Documents/GitHub/AndroidProject/app/src/main/res/menu/top_app_bar.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/AndroidProject/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/hp/AndroidStudioProjects/AndroidProject/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
       </map>

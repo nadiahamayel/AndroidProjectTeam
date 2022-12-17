@@ -37,7 +37,7 @@ public class LoginActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //checkUsername();
+                checkUsername();
                 Intent i = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(i);
             }
@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
             String passwordValue = password.getText().toString();
             if (usernameValue.equals("test@test.com") && passwordValue.equals("password1234")) {
                 //everything checked we open new activity
-                Intent i = new Intent(LoginActivity.this, FirstActivity.class);
+                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
                 startActivity(i);
                 //we close this activity
                 this.finish();

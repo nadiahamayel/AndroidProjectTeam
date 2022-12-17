@@ -5,5 +5,17 @@
         <item>Sweets</item>
         <item>Main dishes</item>
         <item>Side dishes</item>
+
+
+
     </string-array>
+
+
+    <string name="favorite">Favorite</string>
+    <string name="content_description_favorite">content description favorite</string>
+    <string name="search">Search</string>
+    <string name="content_description_search">content description search</string>
+    <string name="home">Favorite</string>
+    <string name="content_description_home">content description home</string>
+
 </resources>

@@ -26,7 +26,11 @@ public class HomeActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 if(position == 1){
-                    Intent intent = new Intent(HomeActivity.this, DrinksActivity.class);
+                    Intent intent = new Intent(HomeActivity.this, SweetsActivity.class);
+                    startActivity(intent);
+                }
+                if(position == 2){
+                    Intent intent = new Intent(HomeActivity.this, MainDishesActivity.class);
                     startActivity(intent);
                 }
             }
