@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="16dp"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgRecipe"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@color/white"
+        android:contentDescription="Recipe"/>
+
+    <TextView
+        android:id="@+id/txtRecipeName"
+        android:layout_toRightOf="@id/imgRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:layout_marginLeft="20dp"
+        style="@style/TextAppearance.AppCompat.Title"
+        />
+
+    <TextView
+        android:id="@+id/txtRecipeDetails"
+        android:layout_below="@id/txtRecipeName"
+        android:layout_toRightOf="@id/imgRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:maxLength="50"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        style="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnDeatails"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/txtRecipeDetails"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/details"
+        android:contentDescription="details"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/btnDeatails"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/edit"
+        android:contentDescription="edit"
+        android:scaleType="fitCenter"/>
+
+    <ImageButton
+        android:id="@+id/btnDelete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/btnEdit"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/delete"
+        android:contentDescription="delete"
+        android:scaleType="fitCenter"/>
+
+
+</RelativeLayout>
