@@ -28,7 +28,7 @@
         android:layout_height="53dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="232dp"
-        android:hint="First Name"
+        android:hint=" Name"
         android:text=""
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,30 +38,17 @@
         tools:ignore="MissingConstraints" />
 
 
-    <EditText
-        android:id="@+id/secand"
-        style="@style/style"
-        android:layout_marginStart="128dp"
 
-        android:layout_marginTop="316dp"
-        android:hint="Secend Name"
-        android:text=""
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/address"
+        android:id="@+id/password"
         style="@style/style"
         android:layout_width="143dp"
 
         android:layout_height="57dp"
         android:layout_marginStart="128dp"
         android:layout_marginTop="404dp"
-        android:hint="Address"
+        android:hint="Password"
         android:text=""
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

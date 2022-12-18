@@ -5,15 +5,15 @@ public class SideDishes {
     private int sideimg;
 
     public static final SideDishes[] sideDishes = {
-            new SideDishes("waffle", R.drawable.waffle),
-            new SideDishes("cookies", R.drawable.cookies),
-            new SideDishes("cheesecake", R.drawable.cheesecake),
-            new SideDishes("ban cake", R.drawable.bancake),
-            new SideDishes("brownies", R.drawable.brownies),
-            new SideDishes("muffins", R.drawable.muffins),
-            new SideDishes("cinnamon rolls", R.drawable.cinnamonrolls),
-            new SideDishes("cake", R.drawable.cake),
-            new SideDishes("cookies", R.drawable.cookies),
+            new SideDishes("Anchovy", R.drawable.anchovy),
+            new SideDishes("Broccoli", R.drawable.broccoli),
+            new SideDishes("Broccolinil", R.drawable.broccolini),
+            new SideDishes("Caramelised", R.drawable.caramelised),
+            new SideDishes("Chunky", R.drawable.chunky),
+            new SideDishes("Mexican", R.drawable.mexican),
+            new SideDishes("Potato", R.drawable.potato),
+            new SideDishes("Rea rice", R.drawable.rice),
+            new SideDishes("Roasted", R.drawable.roasted),
     };
 
     public SideDishes(String sideName, int sideimg) {

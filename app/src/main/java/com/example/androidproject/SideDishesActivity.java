@@ -9,7 +9,7 @@ public class SideDishesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activatiy_Side_Dishes);
+        setContentView(R.layout.activatiy_side_dishes);
 
         RecyclerView recycler = findViewById(R.id.side_dish_recycler);
 

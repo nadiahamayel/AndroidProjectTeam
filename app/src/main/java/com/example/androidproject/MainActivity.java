@@ -5,8 +5,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    private Animation anim;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        anim= AnimationUtils.loadAnimation(this,R.anim.animation);
+        textView=findViewById(R.id.textView4);
+        textView.setAnimation(anim);
+
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override

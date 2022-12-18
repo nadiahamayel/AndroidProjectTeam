@@ -33,6 +33,10 @@ public class HomeActivity extends AppCompatActivity {
                     Intent intent = new Intent(HomeActivity.this, MainDishesActivity.class);
                     startActivity(intent);
                 }
+                if(position == 3){
+                    Intent intent = new Intent(HomeActivity.this, SideDishesActivity.class);
+                    startActivity(intent);
+                }
             }
         };
         ListView listView = findViewById(R.id.main_menu);

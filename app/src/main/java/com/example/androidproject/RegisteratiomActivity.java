@@ -13,15 +13,14 @@ public class RegisteratiomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registeration);
-        EditText firstName;
-        EditText lastName;
-        EditText address;
+        EditText Name;
+        EditText password;
         EditText phone;
         Button register;
 
-        firstName = findViewById(R.id.first);
-        lastName = findViewById(R.id.secand);
-        address = findViewById(R.id.address);
+        Name = findViewById(R.id.first);
+
+        password = findViewById(R.id.password);
         phone = findViewById(R.id.phone);
         register = findViewById(R.id.registration);
 
@@ -32,13 +31,11 @@ public class RegisteratiomActivity extends AppCompatActivity {
             }
 
             private void checkDataEntered() {
-                if (isEmpty(firstName)) {
-                    firstName.setError("first name is required!");
+                if (isEmpty(Name)) {
+                    Name.setError("first name is required!");
                 }
 
-                if (isEmpty(lastName)) {
-                    lastName.setError("Last name is required!");
-                }
+
 
             }
         });
