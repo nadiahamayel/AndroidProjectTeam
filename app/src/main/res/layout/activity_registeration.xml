@@ -10,10 +10,10 @@
     <TextView
         android:id="@+id/textView"
         style="@style/style"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="91dp"
+        android:layout_width="238dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="116dp"
         android:text="Registeration"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,11 +23,11 @@
     <EditText
         android:id="@+id/first"
         style="@style/style"
-        android:layout_width="140dp"
+        android:layout_width="186dp"
 
-        android:layout_height="53dp"
+        android:layout_height="52dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="212dp"
         android:hint=" Name"
         android:text=""
         android:textSize="24sp"
@@ -37,17 +37,14 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-
-
-
     <EditText
         android:id="@+id/password"
         style="@style/style"
-        android:layout_width="143dp"
+        android:layout_width="183dp"
 
-        android:layout_height="57dp"
+        android:layout_height="59dp"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="404dp"
+        android:layout_marginTop="276dp"
         android:hint="Password"
         android:text=""
         android:textSize="24sp"
@@ -60,9 +57,11 @@
     <EditText
         android:id="@+id/phone"
         style="@style/style"
-        android:layout_marginStart="128dp"
+        android:layout_width="199dp"
 
-        android:layout_marginTop="488dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="348dp"
         android:hint="Phone Number"
         android:text=""
         android:textSize="24sp"
@@ -97,10 +96,10 @@
         android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginTop="53dp"
-        android:text="Registration"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="60dp"
         android:backgroundTint="#FF5722"
+        android:text="Registration"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phone" />
 

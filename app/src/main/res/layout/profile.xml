@@ -15,28 +15,29 @@
 
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
-        android:id="@+id/txtInfo"
-        android:layout_below="@id/userImg"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Account Info"
-        android:textColor="#912121"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        android:translationX="-30pt"
-        android:layout_margin="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-<!--    <ListView-->
+    <!--    <ListView-->
 <!--        android:id="@+id/lstUserInfo"-->
 <!--        android:layout_width="300dp"-->
 <!--        android:layout_height="300dp"-->
 
 <!--        />-->
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userImg"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Account Info"
+        android:textColor="#912121"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:translationX="-30pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imgUsername"
         android:layout_width="80dp"

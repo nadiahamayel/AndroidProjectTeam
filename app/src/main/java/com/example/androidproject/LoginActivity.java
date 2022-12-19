@@ -38,8 +38,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 checkUsername();
-                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
-                startActivity(i);
+//                Intent i = new Intent(LoginActivity.this, HomeActivity.class);
+//                startActivity(i);
             }
         });
 
@@ -78,7 +78,15 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(i);
                 //we close this activity
                 this.finish();
-            } else {
+            }
+            else  if (usernameValue.equals("admin@admin.com") && passwordValue.equals("admin")) {
+                //everything checked we open new activity
+                Intent i = new Intent(LoginActivity.this, Home_Admin_Activity.class);
+                startActivity(i);
+                //we close this activity
+                this.finish();
+            }
+            else {
                 Toast t ;
                t = Toast.makeText(this, "Wrong UserName or password!", Toast.LENGTH_SHORT);
                 t.show();

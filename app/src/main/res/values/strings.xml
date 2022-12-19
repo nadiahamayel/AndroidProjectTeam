@@ -7,7 +7,6 @@
         <item>Side dishes</item>
 
 
-
     </string-array>
 
 
@@ -17,5 +16,8 @@
     <string name="content_description_search">content description search</string>
     <string name="home">Favorite</string>
     <string name="content_description_home">content description home</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_first_fragment">Hello First fragment</string>
+    <string name="hello_sec_fragment">Hello Second fragment</string>
+    <string name="hello_third_fragment">Hello Third fragment</string>
 </resources>
