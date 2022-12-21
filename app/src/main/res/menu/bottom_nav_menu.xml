@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/person"
-        android:title="Home"
-        android:icon="@drawable/home"/>
+        android:id="@+id/list"
+        android:title="List"
+        android:icon="@drawable/list"/>
     <item
-        android:id="@+id/home"
-        android:title="Favorite"
-        android:icon="@drawable/favorite"/>
+        android:id="@+id/add"
+        android:title="Add"
+        android:icon="@drawable/add"/>
     <item
-        android:id="@+id/settings"
-        android:title="Person"
-        android:icon="@drawable/person"/>
+        android:id="@+id/users"
+        android:title="Users"
+        android:icon="@drawable/users"/>
 </menu>
