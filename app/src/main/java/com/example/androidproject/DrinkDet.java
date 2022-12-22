@@ -3,7 +3,7 @@ package com.example.androidproject;
 public class DrinkDet {
     private String name;
     private String description;
-    private int time ;
+    private int drink_time ;
     private int imageID;
 
     public static final DrinkDet[] drinks = {
@@ -19,18 +19,18 @@ public class DrinkDet {
 
     };
 
-    public DrinkDet(String name, String description, int time, int imageID) {
+    public DrinkDet(String name, String description, int drink_time, int imageID) {
         this.name = name;
         this.description = description;
-        this.time = time;
+        this.drink_time = drink_time;
         this.imageID = imageID;
     }
 
     public int getTime() {
-        return time;
+        return drink_time;
     }
     public void setTime(int time) {
-        this.time = time;
+        this.drink_time = time;
     }
     public String getName(){return name;}
     public String getDescription(){return description;}
@@ -41,7 +41,7 @@ public class DrinkDet {
         return "Drink{" +
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
-                ", time=" + time +
+                ", drink time=" + drink_time +
                 ", imageID=" + imageID +
                 '}';
     }

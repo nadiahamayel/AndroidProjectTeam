@@ -20,4 +20,9 @@
     <string name="hello_first_fragment">Hello First fragment</string>
     <string name="hello_sec_fragment">Hello Second fragment</string>
     <string name="hello_third_fragment">Hello Third fragment</string>
+
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 </resources>
