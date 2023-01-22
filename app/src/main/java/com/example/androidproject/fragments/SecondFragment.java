@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.androidproject.R;
 
-
+//add
 public class SecondFragment extends Fragment {
 
     public SecondFragment() {

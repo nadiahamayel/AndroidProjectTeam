@@ -15,6 +15,8 @@ import com.example.androidproject.RecipeAdapter;
 
 import java.util.ArrayList;
 
+
+//list
 public class FirstFragment extends Fragment {
     ListView recipesList;
 
