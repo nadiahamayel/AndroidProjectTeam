@@ -13,6 +13,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.androidproject.AdminSide.AdminHomeActivity;
+import com.example.androidproject.UserSide.HomeActivity;
+import com.example.androidproject.UserSide.RegisteratiomActivity;
+
 public class LoginActivity extends AppCompatActivity {
     EditText username;
     EditText password;
@@ -37,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
             setupUI();
             setupListeners();
             setUpSharedPerf ();
+            checkData();
         }
 
     private void setupUI() {
@@ -94,14 +99,14 @@ public class LoginActivity extends AppCompatActivity {
             }
             else  if (usernameValue.equals("admin@admin.com") && passwordValue.equals("admin")) {
                 //everything checked we open new activity
-                Intent i = new Intent(LoginActivity.this, Home_Admin_Activity.class);
-                startActivity(i);
+                Intent k = new Intent(LoginActivity.this, AdminHomeActivity.class);
+                startActivity(k);
                 //we close this activity
                 this.finish();
             }
             else {
                 Toast t ;
-               t = Toast.makeText(this, "Wrong UserName or password!", Toast.LENGTH_SHORT);
+                t = Toast.makeText(this, "Wrong UserName or password!", Toast.LENGTH_SHORT);
                 t.show();
             }
         }

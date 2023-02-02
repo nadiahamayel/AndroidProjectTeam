@@ -30,17 +30,14 @@ public class RecipeAdapter extends ArrayAdapter {
 
         convertView = layoutInflater.inflate(mResource, parent, false);
 
-        ImageView imageView = convertView.findViewById(R.id.imgRecipe);
 
         TextView txtName = convertView.findViewById(R.id.txtRecipeName);
-
-        TextView txtDet = convertView.findViewById(R.id.txtRecipeDetails);
-
-        imageView.setImageResource(((Recipe) getItem(position)).getImage());
+        ImageView imageView1 = convertView.findViewById(R.id.btnDeatails);
+        ImageView imageView2 = convertView.findViewById(R.id.btnEdit);
+        ImageView imageView3 = convertView.findViewById(R.id.btnDelete);
 
         txtName.setText(getItem(position).getClass().getName());
 
-        txtName.setText(((Recipe) getItem(position)).getDescription());
 
 
         return convertView;

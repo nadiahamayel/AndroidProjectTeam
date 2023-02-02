@@ -10,37 +10,69 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidProject">
         <activity
-            android:name=".Home_Admin_Activity"
+            android:name=".MainDish.MainDishesActivityDetails"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminSide.AdminHomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UserSide.FavoriteActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UserSide.ChangePasswordActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UserSide.ProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainDish.MainDishesActivity"
             android:exported="false" />
         <activity
-            android:name=".MainDishesActivity"
+            android:name=".SideDish.SideDishesActivity"
             android:exported="false" />
         <activity
-            android:name=".SideDishesActivity"
+            android:name=".Sweet.SweetsDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".SweetsDetailActivity"
+            android:name=".Sweet.SweetsActivity"
             android:exported="false" />
         <activity
-            android:name=".SweetsActivity"
+            android:name=".Drink.DrinkDetail"
             android:exported="false" />
         <activity
-            android:name=".DrinkDetail"
+            android:name=".Drink.DrinksActivity"
             android:exported="false" />
         <activity
-            android:name=".DrinksActivity"
+            android:name=".UserSide.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegisteratiomActivity"
+            android:name=".UserSide.RegisteratiomActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainDish.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

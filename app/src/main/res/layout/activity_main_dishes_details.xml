@@ -3,27 +3,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".Drink.DrinkDetail">
+    tools:context=".MainDish.MainDishesActivityDetails">
+
 
     <ImageView
-        android:id="@+id/coffee_image"
+        android:id="@+id/mainDishes_image"
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_gravity="center"
         android:padding="20dp"
-       />
+        />
     <TextView
-        android:id="@+id/txtName"
+        android:id="@+id/mainDishesName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="20dp"
         />
     <TextView
-        android:id="@+id/txtTime"
+        android:id="@+id/mainDishesTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -31,11 +32,12 @@
         />
 
     <TextView
-        android:id="@+id/txtDesc"
+        android:id="@+id/mainDishesDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:padding="20dp"
         />
+
 
 </LinearLayout>

@@ -15,6 +15,11 @@ public class Recipe {
         this.description = description;
         this.imageID = imageID;
     }
+
+    public Recipe(String name) {
+        this.name = name;
+    }
+
     public String getName(){
         return name;
     }
