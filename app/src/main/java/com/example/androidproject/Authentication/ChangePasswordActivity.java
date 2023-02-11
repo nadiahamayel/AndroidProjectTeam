@@ -1,4 +1,4 @@
-package com.example.androidproject.UserSide;
+package com.example.androidproject.Authentication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.androidproject.R;
+import com.example.androidproject.UserSide.ProfileActivity;
 
 public class ChangePasswordActivity extends AppCompatActivity {
 

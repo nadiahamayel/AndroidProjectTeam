@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.androidproject.Drink.DrinkDet;
 import com.example.androidproject.R;
 
 public class DrinkDetail extends AppCompatActivity {

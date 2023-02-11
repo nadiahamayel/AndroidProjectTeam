@@ -12,8 +12,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.androidproject.Authentication.ChangePasswordActivity;
 import com.example.androidproject.Drink.DrinksActivity;
-import com.example.androidproject.LoginActivity;
+import com.example.androidproject.Authentication.LoginActivity;
 import com.example.androidproject.MainDish.MainDishesActivity;
 import com.example.androidproject.R;
 import com.example.androidproject.SideDish.SideDishesActivity;

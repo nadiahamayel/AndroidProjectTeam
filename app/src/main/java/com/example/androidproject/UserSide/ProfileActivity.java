@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.androidproject.Authentication.ChangePasswordActivity;
 import com.example.androidproject.R;
 
 public class ProfileActivity extends AppCompatActivity {

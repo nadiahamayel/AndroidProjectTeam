@@ -24,6 +24,10 @@ public class DrinksList {
         this.drinkImg = drinkImg;
     }
 
+    public DrinksList() {
+
+    }
+
     public String getDrinkName() {
         return drinkName;
     }

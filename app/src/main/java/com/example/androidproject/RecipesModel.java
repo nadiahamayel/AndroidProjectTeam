@@ -1,19 +1,37 @@
 package com.example.androidproject;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.Arrays;
 
 public class RecipesModel {
 
+
     private String recipe_name;
     private String recipe_time;
     private String recipe_description ;
-    private  String [] recipe_category;
+    private String  recipe_category;
 
-    public RecipesModel(String recipe_name, String recipe_time, String recipe_description, String[] recipe_category) {
+//    private int recipe_img;
+
+    public RecipesModel() {
+    }
+
+    public RecipesModel(int recipe_id, String recipe_name, String recipe_time, String recipe_description, String recipe_category) {
+
         this.recipe_name = recipe_name;
         this.recipe_time = recipe_time;
         this.recipe_description = recipe_description;
         this.recipe_category = recipe_category;
+    }
+
+    public RecipesModel(String recipe_name, String recipe_time, String recipe_description, String recipe_category) {
+        this.recipe_name = recipe_name;
+        this.recipe_time = recipe_time;
+        this.recipe_description = recipe_description;
+        this.recipe_category = recipe_category;
+
     }
 
     public String getRecipe_name() {
@@ -40,21 +58,31 @@ public class RecipesModel {
         this.recipe_description = recipe_description;
     }
 
-    public String[] getRecipe_category() {
+    public String getRecipe_category() {
         return recipe_category;
     }
 
-    public void setRecipe_category(String[] recipe_category) {
+    public void setRecipe_category(String recipe_category) {
         this.recipe_category = recipe_category;
     }
+
+
+//    public int getRecipe_img() {
+//        return recipe_img;
+//    }
+//
+//    public void setRecipe_img(int recipe_img) {
+//        this.recipe_img = recipe_img;
+//    }
 
     @Override
     public String toString() {
         return "RecipesModel{" +
-                "recipe_name='" + recipe_name + '\'' +
+
+                ", recipe_name='" + recipe_name + '\'' +
                 ", recipe_time='" + recipe_time + '\'' +
                 ", recipe_description='" + recipe_description + '\'' +
-                ", recipe_category=" + Arrays.toString(recipe_category) +
+                ", recipe_category=" + recipe_category +
                 '}';
     }
 }

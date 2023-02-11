@@ -8,6 +8,9 @@ public class DrinkDet {
     private String drink_time ;
     private int imageID;
 
+    public DrinkDet() {
+    }
+
     public static final DrinkDet[] drinks = {
             new DrinkDet("Coffee", "Some coffee beans with hot water and mix it for 2 min " , "5"  , R.drawable.coffee),
             new DrinkDet("Cappuccino", "espresso, hot milk, and steamed milk foam","15" , R.drawable.coffee),

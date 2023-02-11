@@ -18,14 +18,15 @@
         />
 
     <EditText
+        android:id="@+id/rec_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="90dp"
         android:hint="Recipe Name"
         android:textAlignment="center"
-        android:textSize="25dp"
-        ></EditText>
+        android:textSize="25dp"></EditText>
     <EditText
+        android:id="@+id/rec_time"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
@@ -35,33 +36,51 @@
         ></EditText>
 
     <EditText
+        android:id="@+id/rec_description"
         android:layout_width="match_parent"
-        android:layout_height="137dp"
+        android:layout_height="96dp"
         android:layout_marginTop="210dp"
         android:hint="Recipe Description"
         android:inputType="textMultiLine"
-        android:lines="6"
-        android:overScrollMode="always"
-        android:scrollbarStyle="insideInset"
-        android:scrollbars="vertical"
+        android:lines="3"
         android:textAlignment="center"
         android:textSize="25dp"></EditText>
 
-    <Button
-        android:id="@+id/uploadImg"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/rec_category"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="130dp"
+        android:layout_marginTop="330dp"
+        android:hint="Recipe Category"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        ></EditText>
+<!--    <Spinner-->
+<!--        android:id="@+id/category"-->
+<!--        android:layout_width="235dp"-->
+<!--        android:layout_height="36dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+<!--        android:layout_marginTop="410dp"-->
+<!--        android:entries="@array/options"-->
+<!--        />-->
+
+    <EditText
+        android:id="@+id/rec_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="400dp"
-        android:text="Upload Image"
-        ></Button>
+        android:hint="Recipe Img"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        ></EditText>
 
     <Button
         android:id="@+id/addRecipeBtn"
-        android:layout_width="150dp"
+        android:layout_width="151dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="130dp"
-        android:layout_marginTop="460dp"
+        android:layout_marginTop="480dp"
+        android:backgroundTint="#FF5722"
         android:text="Add Recipe"
 
         ></Button>

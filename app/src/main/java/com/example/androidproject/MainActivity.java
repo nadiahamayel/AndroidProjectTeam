@@ -1,4 +1,4 @@
-package com.example.androidproject.MainDish;
+package com.example.androidproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
@@ -9,8 +9,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
-import com.example.androidproject.LoginActivity;
-import com.example.androidproject.R;
+import com.example.androidproject.Authentication.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Animation anim;

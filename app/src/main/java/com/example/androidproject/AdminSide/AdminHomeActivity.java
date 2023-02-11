@@ -22,8 +22,6 @@ public class AdminHomeActivity extends AppCompatActivity  {
     ListUsersFragment listUsersFragment = new ListUsersFragment();
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

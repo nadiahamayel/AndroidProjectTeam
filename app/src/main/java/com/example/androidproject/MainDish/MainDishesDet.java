@@ -9,6 +9,8 @@ public class MainDishesDet {
     private String mainDishes_time ;
     private int mainDishes_imageID;
 
+    public MainDishesDet() {
+    }
 
     public static final MainDishesDet[] mainDishes = {
             new MainDishesDet(  "Maqluba" , "test Cake","120" , R.drawable.cake ),
