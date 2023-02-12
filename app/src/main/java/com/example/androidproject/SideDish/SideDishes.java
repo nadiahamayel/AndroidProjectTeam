@@ -6,6 +6,9 @@ public class SideDishes {
     private String sideName;
     private int sideimg;
 
+    public SideDishes() {
+    }
+
     public static final SideDishes[] sideDishes = {
             new SideDishes("Anchovy", R.drawable.anchovy),
             new SideDishes("Broccoli", R.drawable.broccoli),

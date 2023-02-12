@@ -15,13 +15,13 @@
         android:textColor="@color/black"
         android:textSize="25sp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Image URL"
-        android:id="@+id/uimgurl"
-        android:layout_marginTop="10dp"
-        android:textSize="20sp"/>
+<!--    <EditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Image URL"-->
+<!--        android:id="@+id/uimgurl"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:textSize="20sp"/>-->
 
     <EditText
         android:layout_width="match_parent"
@@ -42,8 +42,15 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Description"
+        android:hint="Recipe Description"
         android:id="@+id/description"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipe Categoty"
+        android:id="@+id/category"
         android:layout_marginTop="10dp"
         android:textSize="20sp"/>
 

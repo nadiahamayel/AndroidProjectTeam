@@ -4,13 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserSide.FavoriteActivity">
+    tools:context=".UserSide.FavoriteActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/frame"
+
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Favorite Activity"
+        android:text="Favorites"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"></TextView>
+
+    <ListView
+        android:id="@+id/favoritesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        >
+
+    </ListView>
+
 
 </LinearLayout>

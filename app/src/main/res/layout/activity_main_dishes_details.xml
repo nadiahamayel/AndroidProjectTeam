@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainDish.MainDishesActivityDetails">
+    tools:context=".MainDish.MainDishesActivityDetails"
+    android:background="@drawable/frame">
 
 
     <ImageView
@@ -39,5 +40,12 @@
         android:padding="20dp"
         />
 
+    <Button
+        android:id="@+id/myfavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="favorite"
+        android:backgroundTint="#902121"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

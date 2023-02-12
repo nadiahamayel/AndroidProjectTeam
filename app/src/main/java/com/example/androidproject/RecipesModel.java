@@ -2,20 +2,30 @@ package com.example.androidproject;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import android.widget.TextView;
 
 import java.util.Arrays;
 
 public class RecipesModel {
 
-
+    private String recipe_id;
     private String recipe_name;
     private String recipe_time;
     private String recipe_description ;
     private String  recipe_category;
 
-//    private int recipe_img;
+   private int recipe_img;
+
 
     public RecipesModel() {
+    }
+
+    public RecipesModel(String recipe_id, String recipe_name, String recipe_time, String recipe_description, String recipe_category) {
+        this.recipe_id = recipe_id;
+        this.recipe_name = recipe_name;
+        this.recipe_time = recipe_time;
+        this.recipe_description = recipe_description;
+        this.recipe_category = recipe_category;
     }
 
     public RecipesModel(int recipe_id, String recipe_name, String recipe_time, String recipe_description, String recipe_category) {
@@ -33,6 +43,8 @@ public class RecipesModel {
         this.recipe_category = recipe_category;
 
     }
+
+
 
     public String getRecipe_name() {
         return recipe_name;
@@ -75,6 +87,14 @@ public class RecipesModel {
 //        this.recipe_img = recipe_img;
 //    }
 
+
+    public String getRecipe_id() {
+        return recipe_id;
+    }
+
+    public void setRecipe_id(String recipe_id) {
+        this.recipe_id = recipe_id;
+    }
     @Override
     public String toString() {
         return "RecipesModel{" +

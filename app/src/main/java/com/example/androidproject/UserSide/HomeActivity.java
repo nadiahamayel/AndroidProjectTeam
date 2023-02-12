@@ -12,7 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import com.example.androidproject.Authentication.ChangePasswordActivity;
+import com.example.androidproject.Authentication.ForgetPasswordActivity;
 import com.example.androidproject.Drink.DrinksActivity;
 import com.example.androidproject.Authentication.LoginActivity;
 import com.example.androidproject.MainDish.MainDishesActivity;
@@ -62,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
 
                     case R.id.nav_chang_password:
                         // Create an Intent to launch the activity
-                        Intent intent2 = new Intent(HomeActivity.this, ChangePasswordActivity.class);
+                        Intent intent2 = new Intent(HomeActivity.this, ForgetPasswordActivity.class);
                         startActivity(intent2);
                         return true;
 

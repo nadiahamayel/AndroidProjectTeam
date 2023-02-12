@@ -13,8 +13,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.androidproject.R;
+import com.example.androidproject.RecipesModel;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import java.util.HashMap;
 import java.util.Map;
@@ -22,7 +24,7 @@ import java.util.Map;
 //add
 public class AddFragment extends Fragment {
 
-    EditText recipe_name ,recipe_time, recipe_description , recipe_category , recipe_img ;
+    EditText recipe_name ,recipe_time, recipe_description , recipe_category ;
     Button add;
 
 //    FirebaseDatabase database = FirebaseDatabase.getInstance();
@@ -41,11 +43,12 @@ public class AddFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.add_fragment, container, false);
+//        recipe_id = view.findViewById(R.id.rec_id);
         recipe_name = view.findViewById(R.id.rec_name);
         recipe_time = view.findViewById(R.id.rec_time);
         recipe_description = view.findViewById(R.id.rec_description);
         recipe_category = view.findViewById(R.id.rec_category);
-        recipe_img = view.findViewById(R.id.rec_img);
+//        recipe_img = view.findViewById(R.id.rec_img);
         add = view.findViewById(R.id.addRecipeBtn);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,21 +63,35 @@ public class AddFragment extends Fragment {
 
     public void insert (){
         Map<String,Object> map=new HashMap<>();
+        //map.put("recipe_id",recipe_id.getText().toString());
         map.put("recipe_name",recipe_name.getText().toString());
         map.put("recipe_time",recipe_time.getText().toString());
         map.put("recipe_description",recipe_description.getText().toString());
         map.put("recipe_category",recipe_category.getText().toString());
-        map.put("recipe_img",recipe_img.getText().toString());
-        FirebaseDatabase.getInstance().getReference().child("recipes").push().setValue(map)
+       // map.put("recipe_img",recipe_img.getText().toString());
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("/recipe").child("recipes");
+        String id =  reference.push().getKey();
+      //  reference.child(id).setValue(map);
+        RecipesModel recipe = new RecipesModel();
+        recipe.setRecipe_id(id);
+        recipe.setRecipe_category(recipe_category.getText().toString());
+        recipe.setRecipe_description(recipe_description.getText().toString());
+        recipe.setRecipe_time(recipe_time.getText().toString());
+        recipe.setRecipe_name(recipe_name.getText().toString());
+
+
+        reference.child(id).setValue(recipe)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        recipe_name.setText("");
-                        recipe_time.setText("");                        Toast.makeText(getView().getContext(),"Inserted Successfully",Toast.LENGTH_LONG).show();
 
+                      //  recipe_id.setText("");
+                        recipe_name.setText("");
+                        recipe_time.setText("");
                         recipe_description.setText("");
                         recipe_category.setText("");
-                       recipe_img.setText("");
+                       // recipe_img.setText("");
+                        Toast.makeText(getView().getContext(),"Inserted Successfully",Toast.LENGTH_LONG).show();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {

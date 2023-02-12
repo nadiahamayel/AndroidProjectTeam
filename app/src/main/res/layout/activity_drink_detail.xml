@@ -14,7 +14,7 @@
         android:layout_height="190dp"
         android:layout_gravity="center"
         android:padding="20dp"
-       />
+        />
     <TextView
         android:id="@+id/txtName"
         android:layout_width="match_parent"
@@ -37,5 +37,12 @@
         android:layout_gravity="center"
         android:padding="20dp"
         />
+
+    <Button
+        android:id="@+id/myfavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="favorite"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

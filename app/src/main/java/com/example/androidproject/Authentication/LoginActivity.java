@@ -1,12 +1,8 @@
 package com.example.androidproject.Authentication;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.text.TextUtils;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.androidproject.AdminSide.AdminHomeActivity;
 import com.example.androidproject.R;
 import com.example.androidproject.UserSide.HomeActivity;
-import com.example.androidproject.UserSide.RegisteratiomActivity;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -28,10 +23,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
-    EditText name  ;
-    Button Login_btn ;
-    TextView textView;
-
+    private boolean save = false;
+    private  boolean flag = true ;
     //object from firebase
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     //object from database reference class , must add child user or recipe
@@ -168,6 +161,26 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 
+
+    @Override
+    ///orientation
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("username", email.getText().toString());
+        outState.putString("password", password.getText().toString());
+        outState.putBoolean("save", save);
+        outState.putBoolean("flag", flag);
+    }
+
+    @Override
+    ///orientation
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        email.setText(savedInstanceState.getString("username"));
+        password.setText(savedInstanceState.getString("password"));
+        save = savedInstanceState.getBoolean("save");
+        flag = savedInstanceState.getBoolean("flag");
+    }
 //    @Override
 //    protected void onStart() {
 //        super.onStart();

@@ -68,4 +68,13 @@ public class Register extends AppCompatActivity {
                 });
     }
 
+
+    //orientation
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("name", email.getText().toString());
+        outState.putString("password", password.getText().toString());
+
+    }
 }

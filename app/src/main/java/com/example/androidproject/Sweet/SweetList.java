@@ -7,6 +7,9 @@ public class SweetList {
     private String sweetName ;
     private int sweetImg;
 
+    public SweetList() {
+    }
+
     public static final SweetList[] sweetsList = {
             new SweetList(  "Cake" , R.drawable.cake ),
             new SweetList("CheeseCake",  R.drawable.cheesecake),

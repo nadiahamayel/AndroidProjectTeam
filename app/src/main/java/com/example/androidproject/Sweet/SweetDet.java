@@ -8,6 +8,9 @@ public class SweetDet {
     private String sweet_time ;
     private int sweet_imageID;
 
+    public SweetDet() {
+    }
+
     public static final SweetDet[] sweets = {
             new SweetDet(  "Cake" , "test Cake","89" , R.drawable.cake ),
             new SweetDet("CheeseCake",  "test CheeseCake","97" ,R.drawable.cheesecake),
